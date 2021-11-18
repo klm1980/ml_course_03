@@ -105,7 +105,6 @@ celerybeat.pid
 .env
 .venv
 env/
-.ons/
 .ons
 ons/
 venv/
