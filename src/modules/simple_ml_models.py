@@ -37,7 +37,8 @@ class SantimentModel:
             if word in processed_text:
                 score += bal
         
-        return 1 if score > 0 else -1 if score < 0 else 0
+        sentiment = 'positive' if score > 0 else 'neutral' if score == 0 else 'negative'
+        return {"sentiment": sentiment, "score": score}
 
 
     

@@ -2,6 +2,11 @@ import streamlit as st
 
 from modules.simple_ml_models import SantimentModel
 
+@st.cache
+def load_model():
+    print("Load model ...")
+    return SantimentModel()
+
 if __name__ == '__main__':
     model = SantimentModel()
     maping = {
